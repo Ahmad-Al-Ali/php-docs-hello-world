@@ -12,23 +12,6 @@
       echo "Opened database successfully\n";
    }
 
-$sql =<<<EOF
-      CREATE TABLE COMPANY
-      (ID INT PRIMARY KEY     NOT NULL,
-      NAME           TEXT    NOT NULL,
-      AGE            INT     NOT NULL,
-      ADDRESS        CHAR(50),
-      SALARY         REAL);
-EOF;
-
-   $ret = $db->exec($sql);
-   if(!$ret){
-      echo $db->lastErrorMsg();
-   } else {
-      echo "Table created successfully\n";
-   }
-  
-
    $sql =<<<EOF
       INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
       VALUES (1, 'Paul', 32, 'California', 20000.00 );
@@ -50,10 +33,4 @@ EOF;
       echo "Records created successfully\n";
    }
    $db->close();
-   unset($db);
-?>
-<?php
-
-echo "Hello World!";
-
 ?>
