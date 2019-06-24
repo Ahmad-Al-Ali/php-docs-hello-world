@@ -27,7 +27,7 @@ EOF;
    } else {
       echo "Table created successfully\n";
    }
-   $db->close();
+  
 
    $sql =<<<EOF
       INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
@@ -50,6 +50,7 @@ EOF;
       echo "Records created successfully\n";
    }
    $db->close();
+   unset($db);
 ?>
 <?php
 
