@@ -1,11 +1,10 @@
 <?php
    class MyDB extends SQLite3 {
       function __construct() {
-         $this->open('test.db');
+            $this->open('test.db');
            $db->busyTimeout(5000);
            $db->exec('PRAGMA journal_mode = wal;');
-echo "construction completed"
-
+            echo "construction completed";
       }
    }
    $db = new MyDB();
