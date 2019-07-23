@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^ah-linux-php7.azurewebsites.net.com$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^www.ah-linux-php7.azurewebsites.net.com$
+
 RewriteCond %{REQUEST_URI} !sub/
 RewriteRule (.*) /sub/$1 [L]
+
 
