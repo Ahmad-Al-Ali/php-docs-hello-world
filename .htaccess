@@ -1,1 +1,1 @@
-RewriteRule ^([^/.]+)/?$ $1.html
+RewriteRule ^([^/.]+)/?$ $1.php
