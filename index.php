@@ -1,5 +1,6 @@
 
 <?php
+echo "hello"
 $servername = "ah-db-server.mysql.database.azure.com";
 $username = "ahmadalali@ah-db-server";
 $password =  getenv("pass") // "Imsup3rawesome";
